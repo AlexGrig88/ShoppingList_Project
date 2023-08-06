@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:background="#E3E3E3"
+    android:paddingTop="2dp">
+
+    <TextView
+        android:id="@+id/productNameTv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="svbbgvg"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/minusIv"
+        app:layout_constraintEnd_toEndOf="@+id/plusIv"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxBought" />
+
+    <ImageView
+        android:id="@+id/deleteIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete_36"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productNameTv" />
+
+    <ImageView
+        android:id="@+id/plusIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_increase_36"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvCost" />
+
+    <ImageView
+        android:id="@+id/minusIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_decrease_36"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plusIv"
+        app:layout_constraintTop_toTopOf="@+id/tvCost" />
+
+
+    <TextView
+        android:id="@+id/tvCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 руб."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/productNameTv"
+        app:layout_constraintEnd_toStartOf="@+id/minusIv"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toEndOf="@+id/deleteIv" />
+
+<!--    <View-->
+<!--        android:id="@+id/view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1sp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="@color/black"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/deleteIv" />-->
+
+    <ImageView
+        android:id="@+id/ivEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/deleteIv"
+        app:layout_constraintTop_toBottomOf="@+id/productNameTv"
+        app:srcCompat="@drawable/ic_edit_36" />
+
+    <CheckBox
+        android:id="@+id/checkBoxBought"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/minusIv"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toEndOf="@+id/ivEdit"
+        app:layout_constraintTop_toBottomOf="@+id/tvCost" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

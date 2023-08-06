@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ShoppingList</string>
+    <string name="title_add_producy">Какой товар будем покупать?</string>
+    <string name="label_name_product">Название:</string>
+    <string name="label_amount">Кол-во:</string>
+    <string name="label_price">Цена:</string>
+    <string name="button_cancel">Отмена</string>
+    <string name="button_ok">OK</string>
+    <string name="hint_product_name">Хлеб</string>
+    <string name="hint_amount">0.0</string>
+    <string name="hint_price">0.0</string>
+</resources>
