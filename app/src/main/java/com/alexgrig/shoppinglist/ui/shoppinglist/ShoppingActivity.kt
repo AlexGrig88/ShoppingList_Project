@@ -53,7 +53,8 @@ class ShoppingActivity : AppCompatActivity(), ShoppingItemActionListener{
     }
 
     private fun updateUI(items: List<ShoppingItem>) {
-        val totalCost = items.filter { it.isBought == 1 }.sumOf { adapter.getCost(it) }
+        var totalCost = items.filter { it.isBought == 1 }.sumOf { adapter.getCost(it) }
+        totalCost = round(totalCost * 100.0) / 100
         binding.tvTotalValue.text = "$totalCost руб."
     }
 
